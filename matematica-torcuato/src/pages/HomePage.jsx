@@ -1,6 +1,8 @@
 import React from 'react'
 import HomeBanner from '../components/HomeBanner/HomeBanner'
 import Bienvenida from '../components/Bienvenida/Bienvenida'
+import PreguntasFrec from '../components/PreguntasFrec/PreguntasFrec'
+import Reseñas from '../components/Reseñas/Reseñas'
 
 
 const HomePage = () => {
@@ -8,6 +10,8 @@ const HomePage = () => {
     <div>
       <HomeBanner/>
       <Bienvenida/>
+      <PreguntasFrec/>
+      <Reseñas/>
         
     </div>
   )

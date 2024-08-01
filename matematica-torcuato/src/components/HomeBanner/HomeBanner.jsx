@@ -18,13 +18,13 @@ const HomeBanner = () => {
 
 
   return (
-    <div className="flex flex-col lg:flex-row bg-gradient-to-br from-cyan-500 to-pink-500">
+    <div className="flex flex-col lg:flex-row bg-gradient-to-br from-cyan-500 to-60% to-pink-500">
       <div className="flex flex-col items-center mx-10 lg:ml-36 lg:mt-40 lg:w-[700px]">
         <h1 className="text-2xl font-Montserrat text-center lg:text-6xl text-white">
-          Es hora de llevar tus estudios al <span className="text-pink-300">siguiente nivel</span>
+          Es hora de llevar tus estudios al <span className="text-black">siguiente nivel</span>
         </h1>
         <p className="my-8 font-Nunito text-center lg:mt-20 lg:text-2xl text-white">
-          ¿Te está costando ese parcial? ¿Estás en clase y piensas si elegiste la carrera correcta? Estás en el lugar correcto. Resolución de prácticas de CBC y clases.
+          ¿Te está costando ese parcial? ¿Estás en clase y pensas si elegiste la carrera correcta? Estás en el lugar correcto. Resolución de prácticas de CBC y clases.
         </p>
         <Button 
           className="rounded-xl" 

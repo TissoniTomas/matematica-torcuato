@@ -11,17 +11,12 @@ import {
 import logo from "../../assets/logo.jpeg";
 import { FaShoppingCart } from "react-icons/fa";
 import { Divider } from 'keep-react';
-import { ModeContext } from '../../context/ModeContext';
+
 import { MdLightMode, MdDarkMode } from "react-icons/md";
-import { useContext } from 'react';
+
 
 const NavBarPage = () => {
-  const { mode, setMode } = useContext(ModeContext);
-
-  const toggleMode = () => {
-    setMode(mode === "light" ? "dark" : "light");
-  };
-
+  
   return (
     <div>
       <Navbar>
@@ -52,9 +47,7 @@ const NavBarPage = () => {
             <NavbarItem>
               <FaShoppingCart size={26} color='blue' />
             </NavbarItem>
-            <NavbarItem onClick={toggleMode}>
-              {mode === "light" ? <MdLightMode size={26} /> : <MdDarkMode size={26} />}
-            </NavbarItem>
+         
           </NavbarList>
           <NavbarCollapseBtn />
           <NavbarCollapse>
@@ -76,9 +69,7 @@ const NavBarPage = () => {
             <NavbarItem>
               <FaShoppingCart size={26} color='blue' />
             </NavbarItem>
-            <NavbarItem onClick={toggleMode}>
-              {mode === "light" ? <MdLightMode size={26} /> : <MdDarkMode size={26} />}
-            </NavbarItem>
+            
           </NavbarCollapse>
         </NavbarContainer>
       </Navbar>
